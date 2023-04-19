@@ -1,0 +1,25 @@
+### Create a book
+POST http://localhost:3000/book
+Content-Type: application/json
+
+{
+  "title": "Domain Driven Design",
+  "description": "To lean how to write better and reusable code",
+  "bar_code": "38234089273483260523547"
+}
+
+### List all books
+GET http://localhost:3000/book
+
+### Update a book data
+PUT http://localhost:3000/book/c44ba4d9-306a-49d9-b6d6-e17046acb200
+Content-Type: application/json
+
+{
+  "title": "Clean Archtecture",
+  "description": "To lean how to build a better archtecture",
+  "bar_code": "98484784239487234987234"
+}
+
+### Delete a book
+DELETE http://localhost:3000/book/98b49edc-91d1-47d3-bf5c-209cc7f83a70
